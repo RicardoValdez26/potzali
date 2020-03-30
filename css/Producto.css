@@ -1,0 +1,118 @@
+@import url("estilos.css");
+
+.Container_Producto{
+	display: grid;
+	grid-template-areas: "header   header       cuenta"
+						 "producto Descripcion  Descripcion"
+						 "footer   footer       footer";
+}
+.header{
+	width: 100%;
+}
+.sesion{
+	width: 100%;
+	margin-right: 100px;
+}
+
+.contenedor_Producto{
+	grid-area: producto;
+	background: #fff;
+	margin:15px;
+	padding: 0;
+	width: 85%;
+	display: flex;
+	flex-direction: column;
+	box-shadow: 1px 1px 0px 1px rgb(204, 204, 204);
+}
+.Container_Producto img{
+	align-self: center;
+}
+.Container_Producto h1{
+	width: 100%;
+	text-align: center;
+	font-size: 25px;
+	color:rgb(56, 56, 56);
+	background: #7CC4DB;
+}
+.Container_Producto h3{
+	font-size: 55px;
+	margin: 0;
+	text-align: center;
+
+	color: #175D85;
+}
+.boton{
+	background: #0488B1;
+	align-self: center;
+	width: 80%;
+	padding: 10px;
+	text-decoration: none;
+	text-align: center;
+	color: #fff;
+	border-radius: 2%;
+	box-shadow: 3px 3px 0px 1px rgb(2, 107, 126);
+
+}
+.boton:hover{
+	background: rgb(97, 165, 185);
+	box-shadow: 1px 1px 0px 1px rgb(2, 107, 126);
+
+}
+.Container_Producto .contactanos{
+	font-size: 15px;
+	width: 80%;
+	text-align: center;
+	align-self: center;
+	color: rgb(134, 134, 134);
+	padding: 5px;
+}
+.ContactoRef{
+	font-size: 16px;
+	color: rgb(94, 94, 94);
+	text-decoration: underline;	
+}
+.ContactoRef:hover{
+	font-size: 17px;
+}
+.Container_Producto .mayoreo{
+	color: rgb(134, 134, 134);
+	font-size: 15px;
+	text-align: center;
+}
+
+.Descripcion_Producto{
+	grid-area: Descripcion;
+	background: #fff;
+	width: 95%;
+	box-shadow: 1px 1px 0px 1px rgb(204, 204, 204);
+	padding: 0px;
+	margin: 15px;
+	
+}
+
+.Descripcion_Producto .Titulo_Descripcion{
+	background:#7CC4DB;
+	text-align: center;
+	padding: 0px;
+	font-size: 25px;
+	color:rgb(56, 56, 56);
+
+}
+.Descripcion_Producto .ContenedorDescripcion {
+	display: flex;
+	flex-direction: row;
+	margin: 0;
+}
+.ContenedorDescripcion p{
+	width: 50%;
+	color:rgb(77, 77, 77);
+}
+.ContenedorDescripcion .ventajas{
+	padding: 10px;
+	margin: 5px;
+	box-shadow: -1px 0 0 0 rgb(66, 66, 66);
+}
+.ContenedorDescripcion .Descripcion{
+	padding: 10px;
+	margin: 5px;
+}

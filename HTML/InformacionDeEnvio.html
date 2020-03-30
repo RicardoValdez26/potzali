@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>POTZALI</title>
+	<meta charset="utf-8">
+	<link rel="icon" type="image/png" href="../images/icono.png">
+	<link rel="stylesheet" type="text/css" href="../css/normalize.css">
+	<link rel="stylesheet" type="text/css" href="../css/InformacionPago.css">
+</head>
+<body>
+	<style >
+		body{
+			background: #4A86D3;
+		}
+	</style>
+	<div class="ContainerInfoGrid">
+	<header class="header">
+			<img src="../images/logotipo.jpg" id="logo" width="120px">
+			<ul id="menu">
+				<li><a href="../index.html">Inicio </a></li>
+				<li><a href="Producto.html">Producto </a></li>
+				<li><a href="QuienesSomos.html">Quienes somos </a></li>
+				<li><a href="Contacto.html">Contacto</a></li>
+			</ul>
+	</header>
+	<div class="sesion">
+		<p> ¿Ya tienes una cuenta? <a href="Registro.html">registrate</a> o <a href="Sesion.html">inicia sesión</a></p>
+	</div>
+	<main class="Container_Info">
+		<section class="Producto">
+			<label>cantidad</label>
+			<input type="number"  id = "Cantidad" class="Cantidad" value="2000"min="2000" max="5000">
+			<label class="Stock">Disponible en stock: 5,000</label>
+		</section>
+		<section class="Informacion">
+			<label class="name">Nombre</label><br>
+			<input id = "" type="text" class="inputName" required placeholder="Igual a tu identificación oficial"><br>
+			<label class="direccion">Dirección</label><br>
+			<input id = "" type="text" class="inputDireccion" required><br>
+			<label class="CP">Codigo Postal</label><br>
+			<input id = "" type="text" class="input_CP" required><br>
+			<label class="colonia">Colonia</label><br>
+			<input id = "" type="text" class="InputColonia" required><br>
+			<label class="Calles">Entre que calles</label><br>
+			<input id = "" type="text" class="Calles_Input" required><br>
+			<label class="Telefono">Telefono</label><br>
+			<input id = "" type="text" class="Input_Telefono"required ><br>
+			<label class="Indicadores">Indicaciones extras del estableciminento</label><br>
+			<input id = "" type="text" class="input_indicadores" placeholder="Color de casa, estableciminento comercial cerca, etc.">
+		</section>
+		<section>		
+		</section>	
+	</main>
+	<aside class="CostoTotal">
+			<p id="Precio" class="Precio">$00000</p>
+			<h3>Incluye costo de envio</h3>
+			<h4>Por el momento solo se hacen envíos dentro de la ciudad</h4>
+			<p class="aceptamos">Aceptamos pagos con:</p>
+			<div class="pagos">
+				<img class="visa" src="../images/visa.png">
+				<img class="paypal" src="../images/paypal.png">
+				<img class="master" src="../images/tarjeta-mastercard.png">
+			</div>	
+			<a class="Boton" href="Pago.html">Comprar</a>
+	</aside>
+	<footer class="pie">
+		<a href="Terminos.html">Términos y condiciones</a> <p>2020 POTZALI  S. DE R.L</p>  <a href="AvisoPrivasidad.html">Aviso de privacidad</a>
+	</footer>
+</div>
+	<script type="text/javascript" src="../JavaScript/InformacionPago.js"></script>
+</body>
+</html>

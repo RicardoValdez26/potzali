@@ -1,0 +1,38 @@
+@import url("estilos.css");
+
+body{
+    margin: 0;
+}
+.ContenedorPrivasidad{
+    display: grid;
+    grid-template-areas: "header       cuenta       cuenta"
+                         "titulo       titulo       titulo"
+                         "descripcion  descripcion  descripcion"
+                         "footer       footer       footer";
+}
+.sesion{
+    width: 100%;
+    font-size: 20px;
+}
+.titulo{
+    grid-area: titulo;
+    background: #fff;
+    display:flex;
+    justify-content: center;
+    align-content: center;
+    justify-self: center;
+    width: 50%;
+    box-shadow:  2px 2px 0 2px rgb(218, 218, 218);
+}
+.descripcion{
+    grid-area: descripcion;
+    background: #fff;
+    width: 50%;
+    padding: 50px;
+    justify-self: center;
+    box-shadow:  2px 2px 0 2px rgb(218, 218, 218);
+    margin-bottom: 20px;
+	line-height: 28px;
+	font-size: 16px;
+    color: #414141;
+}

@@ -1,0 +1,96 @@
+@import url("estilos.css");
+
+body{
+	background: #fff;
+}
+body:before{
+	content: "";
+	width: 100%;
+	min-height: 100vh;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: linear-gradient(90deg,#52c4df,#ad55c1);
+	opacity: 0.3;
+	z-index: -1;
+}
+
+.contenedorsesion{
+	display: grid;
+	grid-template-areas: "header      cuenta"
+						 "formulario  formulario"
+						 "footer      footer";
+}
+.sesion{
+	color:rgb(78, 78, 78);
+}
+#Contenedor_Form{
+	grid-area: formulario;
+}
+
+#Contenedor_Form .Formulario {
+	background: rgba(255,255,255,0.6);
+	right:450px;
+	position: absolute;
+	top: 100px;
+
+}
+#Contenedor_Form .Formulario h1{
+	margin-top: 0;
+	text-align: center;
+	color: rgba(0,0,0,0.7);
+	font-size: 30px;
+}
+.Formulario{
+	width: 400px;
+	height: 420px;
+	max-width: 100%;
+	margin: auto;
+	margin-top: 30PX;
+	padding: 20PX;
+	box-shadow: 0 0 20px 1px rgba(0,0,0,0.5);
+}
+.Form_Input, .Form_Label,.Form_Submit{
+	display: block;
+	width: 100%;
+	font-size: 1.3em;
+}
+.Form_Input{
+	padding: 10px;
+	border: 1px solid rgba(0,0,0,0.3);	
+	margin-bottom: 40px;
+	background: rgba(0,0,0,0.2);
+}
+.Form_Input:focus{
+	/*Cuando das click en un elemento*/
+	outline: 1px solid rgba(0,0,0,0.7);	
+}
+
+
+.Form_Label{
+	padding-left: 15px;
+	position: absolute;
+	margin-top: -110px;
+	transition: all 0.2s;
+	color: rgb(0,0,0);
+	z-index: -1;
+}
+.Form_Submit{
+	background: rgba(0,0,0,0.7);
+	color: white;
+	padding: 10px 20px;
+	cursor: pointer;
+	border: none;
+}
+
+#Contenedor_Form .Formulario p{
+	margin-bottom: 20px;
+	text-align: center;
+}
+#Contenedor_Form .Formulario a{
+	text-decoration: none;
+	color: #0463A3;
+}
+.fijar{
+	margin-top: -130px;
+}

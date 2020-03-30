@@ -1,0 +1,91 @@
+@import url("estilos.css");
+
+.ContenedorPagoGrid{
+	display: grid;
+	grid-template-areas: "header     cuenta"
+						 "contenido  contenido"
+						 "footer     footer";
+}
+.Contenedor_Pago{
+	justify-self: center;
+	grid-area: contenido;
+	margin: 100px 0px;
+	margin-top: 40px;
+	color: #000;
+	background: #fff;
+	width: 50%;
+	max-height: 90%;
+	opacity: 95%;
+	box-shadow: 3px 3px 0px 2px rgba(0,0,0,0.6);
+	border-radius: 1%;
+	padding: 10px;
+}
+.Contenedor_Pago{
+	display:-webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+
+
+
+}
+h1{
+	width: 100%;
+	margin:10px;
+	text-align: center;
+}
+
+.Contenedor_Pago a{
+	text-align: center;
+	text-decoration: none;
+	justify-self:center;
+	align-self: center;
+	font-size: 30px;
+	padding: 10px;
+	color:rgb(255, 255, 255);
+	font-size: 25px;
+	background: rgb(81, 201, 133);
+	border-radius: 1%;
+	width: 50%;
+	margin:10px 10px 10px 10px;
+	box-shadow: 3px 3px 0px 1px rgb(46, 155, 93);
+}
+.Contenedor_Pago a:hover{
+	background: rgb(70, 177, 116);
+	box-shadow: 1px 1px 0px 1px rgb(46, 155, 93);
+}
+
+.Domicilio{
+	margin: 10px;
+}
+
+
+.Contenedor_Pago p{
+	text-align: center;
+	align-self: flex-start;
+	
+	padding: 10px;
+	margin: 20px;
+	font-size: 18px;
+}
+@media screen and (max-width: 768px){
+	.ContenedorPagoGrid{
+		grid-template-areas: "header     header"
+							 "cuenta     cuenta"
+							 "contenido  contenido"
+							 "footer     footer";
+		
+	}
+	.header a{
+		font-size: 15px;
+	}
+	.Contenedor_Pago{
+		
+		width: 90%;
+	}
+	.Contenedor_Pago a{
+		font-size: 20px;
+		height: 10%;
+	}
+}

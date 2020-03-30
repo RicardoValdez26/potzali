@@ -1,0 +1,62 @@
+
+@import url("estilos.css");
+
+.ContainerContacto{
+	display:grid;
+	width: 100%;
+	grid-template-areas:  "header    cuenta"
+						  "contacto  mapa"
+						  "footer    footer";
+}
+.Contacto{
+	grid-area: contacto;
+}
+.Contacto h1{
+	margin:2px;
+	background: rgb(29, 29, 29);
+	padding: 10px;
+	width: 100%;
+	padding: 10px;
+	font-size: 23px;
+	color:#fff;
+}
+.Contacto img {
+	margin: 10px 150px;
+	box-shadow:  2px 2px 0 2px #444;
+	border-radius: 1%;
+}
+.Contacto p{
+	margin: 10px 60px;
+}
+.map{
+	grid-area: mapa;
+	display: flex;
+	align-content: flex-end;
+	justify-content: end;
+	
+}
+
+@media screen and (max-width: 768px){
+	.ContainerContacto{
+		grid-template-areas:  "header    header"
+							  "cuenta    cuenta"
+							  "contacto  contacto"
+							  "mapa      mapa"
+						      "footer    footer";
+
+	}
+	.Contacto{
+		width: 500px;
+	}
+	.Contacto h1{
+		font-size: 16px;
+		background: none;
+		color:#000;
+	}
+	.Contacto img{
+		margin: 10px 80px;
+	}
+	.map{
+		width: 500px;
+	}
+}

@@ -1,0 +1,18 @@
+@import url("header.css");
+@import url("footer.css");
+
+html{
+	box-sizing: border-box;
+}
+*,*:before, *:after{
+	box-sizing: inherit;
+}
+body{
+	background: #E9ECF4; 
+	font-family: sans-serif;
+}
+
+
+
+
+

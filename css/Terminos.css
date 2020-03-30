@@ -1,0 +1,73 @@
+@import url("estilos.css");
+
+body{
+    margin: 0;
+}
+
+
+.ContenedorTerminos{
+    display: grid;
+    grid-template-areas: "header  cuenta cuenta"
+                         "titulo   titulo titulo"
+                         "terminos terminos terminos"
+                         "footer   footer  footer";
+}
+.ContenedorTerminos .titulo{
+    display: flex;
+    align-self: center;
+    justify-self: center;
+    justify-content: center;
+    width: 55%;
+    grid-area: titulo;
+    padding: 10px;
+    background: #fff;
+    box-shadow: 1px 1px 1px 1px rgb(105, 105, 105);
+    color: #414141;
+}
+.ContenedorTerminos .titulo::before{	
+	left: -10px;
+}
+.ContenedorTerminos .titulo::after{
+	right: -10px;
+}
+.ContenedorTerminos .titulo::after,.titulo::before{
+    top: 15px;
+	text-align: center;
+	content: "";
+	width: 150px;
+	height: 2px;
+	background-color: black;
+	position: relative;
+
+}
+.terminos {
+    grid-area: terminos;
+	width: 55%;
+    height: 400px;
+    justify-self: center;
+	margin: 10px;
+    padding: 20px;
+	background: #fff;
+	overflow: auto;
+	font-family: 'Open Sans';
+    border-radius: 4px;
+    
+}
+
+ .terminos p{
+	margin-bottom: 20px;
+	line-height: 28px;
+	font-size: 16px;
+    color: #414141;
+}
+
+/* Scroll Personalizado */
+
+.terminos::-webkit-scrollbar {
+	width: 7px;
+}
+
+.terminos::-webkit-scrollbar-thumb {
+	background: #00aeff;
+	border-radius: 5px;
+}
